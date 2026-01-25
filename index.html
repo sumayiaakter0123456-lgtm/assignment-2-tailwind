@@ -23,13 +23,7 @@
         
       }
     </style>
-    <style>
-        @layer utilities {
-            .footer-bg {
-                background-image: url("./assets/footer-bg.png");
-            }
-        }
-    </style>
+
 </head>
 
 <body class="bg-primary text-white font-inter">
@@ -49,13 +43,7 @@
                 class="hidden lg:flex items-center justify-center gap-[4px] bg-gradient-to-r from-[#FACC15] via-[#EC4899] to-[#6B21A8] px-[16px] py-[12px] rounded-full font-semibold text-[16px] hover:opacity-90 transition-all duration-150">Subscribe<i
                     class="fa-solid fa-arrow-right"></i></button>
             <div class="lg:hidden text-green cursor-pointer">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
-                    stroke-linecap="round">
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-
+                <img src="./assets/hamburger-menu.png" alt="">
             </div>
         </div>
     </nav>
@@ -86,16 +74,11 @@
                     class="flex items-center gap-[8px] border border-[#00FF88] text-[#00FF88] px-[20px] py-[13px] rounded-full font-semibold">
                     <img src="./assets/message.png" alt="">Subscribe</button>
             </div>
-
         </div>
-
-
     </section>
     <section class="bg-primary text-[#FFFFFF] w-full flex flex-col items-center text-center">
         <h2 class="text-[32px] lg:text-[48px] font-bold mt-[50px]">About The Podcast</h2>
-
         <div class="max-w-[1200px] gap-[16px] text-[16px] font-normal leading-relaxed">
-
             <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
                 We break down complex topics into digestible insights, explore productivity strategies that actually
                 work,
@@ -152,7 +135,6 @@
                 </div>
                 <div class="lg:col-span-3 bg-[#351165] p-8 rounded-[32px] border border-white/5 ">
                     <img src="./assets/zap-fast.png" alt="" class="pb-[16px]">
-
                     <h3 class="text-[22px] font-bold pb-[16px] lg:text-[24px]">Exclusive Interviews</h3>
                     <p class="text-[16px] font-normal opacity-60">Get unprecedented access to industry titans,
                         startup
@@ -161,8 +143,6 @@
                         journeys,
                         failures, and success strategies.
                     </p>
-
-
                 </div>
                 <div class="lg:row-span-1 bg-[#351165] p-8 rounded-3xl border border-white/5">
                     <img src="./assets/resource.png" alt="" class="pb-[16px]">
@@ -178,22 +158,17 @@
         <div class="max-w-[1600px] mx-auto">
             <h2 class="text-[32px] lg:text-[48px] font-bold mt-[120px] mb-[40px] text-center">Featured Episodes</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
-
                 <div class="bg-[#250D44] rounded-3xl overflow-hidden">
                     <div class="relative h-[225px] lg:h-[214px]">
-                        <video class="w-full h-full object-cover" src="./videos/video1.mp4"></video>
-
-
-                        <div class="absolute inset-0 flex items-center justify-center">
+                        <video class="w-full h-full object-cover" src="./videos/video1.mp4" controls></video>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:hidden">
                             <div
                                 class=" w-[60px] h-[60px] bg-gradient-to-br from-[#FFB800] via-[#FF00E5] to-[#7000FF] rounded-full flex items-center justify-center">
                                 <img src="./assets/youtube-podcast.png" alt="">
                             </div>
                         </div>
                     </div>
-
-
-
                     <div class="p-[24px]">
                         <h3 class="text-[20px] font-bold lg:text-[24px] mb-[12px]">The Future of AI in Everyday Life
                         </h3>
@@ -212,8 +187,9 @@
                 </div>
                 <div class="bg-[#250D44] rounded-3xl overflow-hidden">
                     <div class="relative h-[225px] lg:h-[214px]">
-                        <video class="w-full h-full object-cover" src="./videos/video2.mp4"></video>
-                        <div class="absolute inset-0 flex items-center justify-center">
+                        <video class="w-full h-full object-cover" src="./videos/video2.mp4" controls></video>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:hidden">
                             <div
                                 class=" w-[60px] h-[60px] bg-gradient-to-br from-[#FFB800] via-[#FF00E5] to-[#7000FF] rounded-full flex items-center justify-center">
                                 <img src="./assets/youtube-podcast.png" alt="">
@@ -237,11 +213,11 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bg-[#250D44] rounded-3xl overflow-hidden">
                     <div class="relative h-[225px] lg:h-[214px]">
-                        <video class=" w-full h-full object-cover" src="./videos/video3.mp4"></video>
-                        <div class="absolute inset-0 flex items-center justify-center">
+                        <video class=" w-full h-full object-cover" src="./videos/video3.mp4" controls></video>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:hidden">
                             <div
                                 class=" w-[60px] h-[60px] bg-gradient-to-br from-[#FFB800] via-[#FF00E5] to-[#7000FF] rounded-full flex items-center justify-center">
                                 <img src="./assets/youtube-podcast.png" alt="">
@@ -266,86 +242,80 @@
                     </div>
                 </div>
             </div>
-
-
-
             <div class="flex justify-center items-center lg:text-center">
                 <h3 class="text-[32px] lg:text-[48px] font-bold mt-[60px] mb-[24px]">Meet the Host</h3>
             </div>
             <div
-                class=" w-full p-[24px] bg-[#250D44] rounded-4xl flex flex-col justify-center items-center lg:w-[1200px] p-[40px] mx-auto">
+                class=" w-full p-[24px] bg-[#250D44] rounded-4xl flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:w-[1200px] p-[40px] mx-auto gap-[24px]">
                 <img src="./assets/host.png" alt="" class="object-cover">
-                <h4 class="text-[24px] font-bold pt-[16px] pb-[16px] lg:text-[32px] flex-row text-left">
-                    Alex
-                    Kumar</h4>
-                <p class="text-[16px] font-normal opacity-60">Tech entrepreneur, productivity expert,
-                    and
-                    lifelong learner. Alex has been in the tech
-                    industry for over 10 years, working with startups and Fortune 500 companies. Through
-                    TechWave, Alex shares insights from industry leaders and practical advice for anyone
-                    looking
-                    to grow in tech.</p>
-
-
-                <div class="flex items-center justify-center gap-[8px] mt-[16px]">
-                    <div
-                        class="p-[12px] border border-white/20 rounded-full hover:bg-white/10 transition-all cursor-pointer">
-                        <img src="./assets/linkedin.png" alt="" class="object-contain ">
-                    </div>
-                    <div
-                        class="p-[12px] border border-white/20 rounded-full hover:bg-white/10 transition-all cursor-pointer">
-                        <img src="./assets/x.png" alt="" class="">
-                    </div>
-                    <div
-                        class="p-[12px] border border-white/20 rounded-full hover:bg-white/10 transition-all cursor-pointer">
-                        <img src="./assets/instagram.png" alt="" class="">
-                    </div>
-                    <div
-                        class="p-[10px] border border-white/20 rounded-full hover:bg-white/10 transition-all cursor-pointer">
-                        <img src="./assets/youtube.png" alt="" class="">
+                <div class="flex flex-col items-center lg:items-start flex-1">
+                    <h4 class="text-[24px] font-bold pt-[16px] pb-[16px] lg:text-[32px] flex-row text-left">
+                        Alex
+                        Kumar</h4>
+                    <p class="text-[16px] font-normal opacity-60">Tech entrepreneur, productivity expert,
+                        and
+                        lifelong learner. Alex has been in the tech
+                        industry for over 10 years, working with startups and Fortune 500 companies. Through
+                        TechWave, Alex shares insights from industry leaders and practical advice for anyone
+                        looking
+                        to grow in tech.</p>
+                    <div class="flex items-center justify-center gap-[8px] mt-[16px]">
+                        <div
+                            class="p-[12px] border border-white/20 rounded-full hover:bg-white/10 transition-all cursor-pointer">
+                            <img src="./assets/linkedin.png" alt="" class="object-contain ">
+                        </div>
+                        <div
+                            class="p-[12px] border border-white/20 rounded-full hover:bg-white/10 transition-all cursor-pointer">
+                            <img src="./assets/x.png" alt="" class="">
+                        </div>
+                        <div
+                            class="p-[12px] border border-white/20 rounded-full hover:bg-white/10 transition-all cursor-pointer">
+                            <img src="./assets/instagram.png" alt="" class="">
+                        </div>
+                        <div
+                            class="p-[10px] border border-white/20 rounded-full hover:bg-white/10 transition-all cursor-pointer">
+                            <img src="./assets/youtube.png" alt="" class="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <footer class="relative bg-cover bg-center flex flex-col items-center justify-center text-center overflow-hidden">
+        <div class="absolute inset-0 z-0 flex items-center justify-center">
+            <img src="./assets/footer-bg.png" alt="" class="w-full h-full object-cover opacity-100">
         </div>
 
-    </section>
-    <footer
-        class="footer-bg relative min-h-[400px] px-[20px] py-[40px] bg-cover bg-center flex flex-col items-center justify-center text-center overflow-hidden">
-        <div class="relative z-20 flex flex-col items-center gap-8 w-full max-w-6xl">
+        <div class="relative z-20 flex flex-col items-center max-w-[440px] lg:max-w-[1600px]">
             <div class="flex flex-col items-center text-center">
-                <h2 class="text-[24px] font-extrabold mt-[120px]"> Tech<span
+                <h2 class="text-[60px] font-extrabold mt-[40px] lg:mt-[120px]"> Tech<span
                         class="bg-gradient-to-r from-[#FFB800] via-[#FF00E5] to-[#7000FF] bg-clip-text text-transparent">Wave</span>
                 </h2>
-                <div class="flex flex-wrap justify-center mt-[32px] gap-[16px] lg:gap-[40px]">
-                    <div class="flex items-center gap-[8px]">
-                        <img src="./assets/spotify.png" alt="" class="w-5 h-5">
-                        <span class="text-[16px] font-normal opacity-60">Spotify</span>
-                    </div>
-                    <div class="flex items-center gap-[8px]">
-                        <img src="./assets/apple-podcast.png" alt="" class="w-5 h-5">
-                        <span class="text-[16px] font-normal opacity-60">Apple Podcasts</span>
-                    </div>
-                    <div class="flex items-center gap-[8px]">
-                        <img src="./assets/youtube-podcast.png" alt="" class="w-5 h-5">
-                        <span class="text-[16px] font-normal opacity-60">YouTube</span>
-                    </div>
-                    <div class="flex items-center gap-[8px]">
-                        <img src="./assets/twitter.png" alt="" class="w-5 h-5">
-                        <span class="text-[16px] font-normal opacity-60">Twitter</span>
-                    </div>
+            </div>
+            <div class="flex flex-wrap justify-center items-center mt-[32px] gap-[16px] lg:gap-[40px]">
+                <div class="flex items-center gap-[8px]">
+                    <img src="./assets/spotify.png" alt="" class="w-5 h-5">
+                    <span class="text-[16px] font-normal opacity-60">Spotify</span>
                 </div>
-
-
-                <div class="text-[16px] font-normal opacity-60 pt-[32px]">
-                    <p>© 2026 TechWave Podcast. All rights reserved.</p>
+                <div class="flex items-center gap-[8px]">
+                    <img src="./assets/apple-podcast.png" alt="" class="w-5 h-5">
+                    <span class="text-[16px] font-normal opacity-60">Apple Podcasts</span>
                 </div>
-
+                <div class="flex items-center gap-[8px]">
+                    <img src="./assets/youtube-podcast.png" alt="" class="w-5 h-5">
+                    <span class="text-[16px] font-normal opacity-60">YouTube</span>
+                </div>
+                <div class="flex items-center gap-[8px]">
+                    <img src="./assets/twitter.png" alt="" class="w-5 h-5">
+                    <span class="text-[16px] font-normal opacity-60">Twitter</span>
+                </div>
+            </div>
+            <div class="text-[16px] font-normal opacity-60 pt-[32px] mb-[40px] lg:mb-[120px]">
+                <p>© 2026 TechWave Podcast. All rights reserved.</p>
             </div>
         </div>
+        </div>
     </footer>
-
-
 </body>
 
 </html>
