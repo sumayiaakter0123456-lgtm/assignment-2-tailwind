@@ -78,13 +78,14 @@
     </section>
     <section class="bg-primary text-[#FFFFFF] w-full flex flex-col items-center text-center">
         <h2 class="text-[32px] lg:text-[48px] font-bold mt-[50px]">About The Podcast</h2>
-        <div class="max-w-[1200px] gap-[16px] text-[16px] font-normal leading-relaxed">
+        <div class="max-w-[1200px] gap-[16px] text-[16px] font-normal opacity-80 leading-snug lg:leading-loose">
             <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
                 We break down complex topics into digestible insights, explore productivity strategies that actually
                 work,
                 and share stories of personal growth from industry leaders.
             </p>
-            <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            <p class="mt-[17px]">Join thousands of young professionals and tech enthusiasts who start their day with
+                TechWave.</p>
         </div>
         <div class="w-full max-w-[1200px] h-[1px] bg-white opacity-10 mx-[200px] my-[80px]"></div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-[40px] lg:gap-[80px] w-full max-w-[1200px] pb-[120px]">
@@ -159,8 +160,9 @@
             <h2 class="text-[32px] lg:text-[48px] font-bold mt-[120px] mb-[40px] text-center">Featured Episodes</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
                 <div class="bg-[#250D44] rounded-3xl overflow-hidden">
-                    <div class="relative h-[225px] lg:h-[214px]">
-                        <video class="w-full h-full object-cover" src="./videos/video1.mp4" controls></video>
+                    <div class="relative aspect-video w-full bg-black lg:relative lg:h-[214px]">
+                        <video class="w-full h-full object-cover" src="./videos/video1.mp4" poster="./assets/water.jpg"
+                            controls></video>
                         <div
                             class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:hidden">
                             <div
@@ -186,8 +188,9 @@
                     </div>
                 </div>
                 <div class="bg-[#250D44] rounded-3xl overflow-hidden">
-                    <div class="relative h-[225px] lg:h-[214px]">
-                        <video class="w-full h-full object-cover" src="./videos/video2.mp4" controls></video>
+                    <div class="relative aspect-video w-full bg-black lg:relative lg:h-[214px]">
+                        <video class="w-full h-full object-cover" src="./videos/video2.mp4" poster="./assets/photo.jpg"
+                            controls></video>
                         <div
                             class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:hidden">
                             <div
@@ -214,8 +217,9 @@
                     </div>
                 </div>
                 <div class="bg-[#250D44] rounded-3xl overflow-hidden">
-                    <div class="relative h-[225px] lg:h-[214px]">
-                        <video class=" w-full h-full object-cover" src="./videos/video3.mp4" controls></video>
+                    <div class="relative aspect-video w-full bg-black lg:relative lg:h-[214px]">
+                        <video class=" w-full h-full object-cover" src="./videos/video3.mp4" poster="./assets/hill.jpg"
+                            controls></video>
                         <div
                             class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:hidden">
                             <div
@@ -281,18 +285,17 @@
             </div>
         </div>
     </section>
-    <footer class="relative bg-cover bg-center flex flex-col items-center justify-center text-center overflow-hidden">
-        <div class="absolute inset-0 z-0 flex items-center justify-center">
-            <img src="./assets/footer-bg.png" alt="" class="w-full h-full object-cover opacity-100">
+    <footer class="relative bg-cover justify-center items-center text-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="./assets/footer-bg.png" alt="" class=" w-full h-full opacity-100">
         </div>
-
-        <div class="relative z-20 flex flex-col items-center max-w-[440px] lg:max-w-[1600px]">
+        <div class="relative z-10 flex flex-col items-center text-center">
             <div class="flex flex-col items-center text-center">
                 <h2 class="text-[60px] font-extrabold mt-[40px] lg:mt-[120px]"> Tech<span
                         class="bg-gradient-to-r from-[#FFB800] via-[#FF00E5] to-[#7000FF] bg-clip-text text-transparent">Wave</span>
                 </h2>
             </div>
-            <div class="flex flex-wrap justify-center items-center mt-[32px] gap-[16px] lg:gap-[40px]">
+            <div class="flex flex-wrap justify-center items-center mt-[32px] gap-[16px] lg:flex-nowrap lg:gap-[40px]">
                 <div class="flex items-center gap-[8px]">
                     <img src="./assets/spotify.png" alt="" class="w-5 h-5">
                     <span class="text-[16px] font-normal opacity-60">Spotify</span>
@@ -301,6 +304,16 @@
                     <img src="./assets/apple-podcast.png" alt="" class="w-5 h-5">
                     <span class="text-[16px] font-normal opacity-60">Apple Podcasts</span>
                 </div>
+                <div class=" hidden lg:flex items-center gap-[8px]">
+                    <img src="./assets/youtube-podcast.png" alt="" class="w-5 h-5">
+                    <span class="text-[16px] font-normal opacity-60">YouTube</span>
+                </div>
+                <div class="hidden lg:flex items-center gap-[8px]">
+                    <img src="./assets/twitter.png" alt="" class="w-5 h-5">
+                    <span class="text-[16px] font-normal opacity-60">Twitter</span>
+                </div>
+            </div>
+            <div class="flex justify-center items-center flex-wrap gap-[16px] mt-[16px] lg:hidden">
                 <div class="flex items-center gap-[8px]">
                     <img src="./assets/youtube-podcast.png" alt="" class="w-5 h-5">
                     <span class="text-[16px] font-normal opacity-60">YouTube</span>
